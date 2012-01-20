@@ -13,6 +13,10 @@
 		42EF3A4F14C916180034E0B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EF3A4D14C916180034E0B4 /* InfoPlist.strings */; };
 		42EF3A5114C916180034E0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF3A5014C916180034E0B4 /* main.m */; };
 		42EF3A5514C916180034E0B4 /* RGMoviePlayerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF3A5414C916180034E0B4 /* RGMoviePlayerAppDelegate.m */; };
+		42EF3A6714C918E30034E0B4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EF3A6614C918E30034E0B4 /* MediaPlayer.framework */; };
+		42EF3A6A14C920E00034E0B4 /* RGFacebookMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF3A6914C920E00034E0B4 /* RGFacebookMoviePlayerController.m */; };
+		42EF3A7114C928980034E0B4 /* RGYoutubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF3A7014C928980034E0B4 /* RGYoutubePlayerController.m */; };
+		42EF3A7514C93FFC0034E0B4 /* RGVideoPlayerEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF3A7414C93FFB0034E0B4 /* RGVideoPlayerEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,20 @@
 		42EF3A4414C916180034E0B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42EF3A4614C916180034E0B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42EF3A4814C916180034E0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42EF3A4C14C916180034E0B4 /* RGMoviePlayer-Info.plist */ = {isa = PBXFileReference; path = "RGMoviePlayer-Info.plist"; sourceTree = "<group>"; };
+		42EF3A4C14C916180034E0B4 /* RGMoviePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGMoviePlayer-Info.plist"; sourceTree = "<group>"; };
 		42EF3A4E14C916180034E0B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42EF3A5014C916180034E0B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42EF3A5214C916180034E0B4 /* RGMoviePlayer-Prefix.pch */ = {isa = PBXFileReference; path = "RGMoviePlayer-Prefix.pch"; sourceTree = "<group>"; };
-		42EF3A5314C916180034E0B4 /* RGMoviePlayerAppDelegate.h */ = {isa = PBXFileReference; path = RGMoviePlayerAppDelegate.h; sourceTree = "<group>"; };
+		42EF3A5214C916180034E0B4 /* RGMoviePlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGMoviePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		42EF3A5314C916180034E0B4 /* RGMoviePlayerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGMoviePlayerAppDelegate.h; sourceTree = "<group>"; };
 		42EF3A5414C916180034E0B4 /* RGMoviePlayerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGMoviePlayerAppDelegate.m; sourceTree = "<group>"; };
+		42EF3A6614C918E30034E0B4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		42EF3A6814C920E00034E0B4 /* RGFacebookMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGFacebookMoviePlayerController.h; sourceTree = "<group>"; };
+		42EF3A6914C920E00034E0B4 /* RGFacebookMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGFacebookMoviePlayerController.m; sourceTree = "<group>"; };
+		42EF3A6F14C928980034E0B4 /* RGYoutubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGYoutubePlayerController.h; sourceTree = "<group>"; };
+		42EF3A7014C928980034E0B4 /* RGYoutubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGYoutubePlayerController.m; sourceTree = "<group>"; };
+		42EF3A7214C928CB0034E0B4 /* RGVideoPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGVideoPlayerDelegate.h; sourceTree = "<group>"; };
+		42EF3A7314C93FFB0034E0B4 /* RGVideoPlayerEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGVideoPlayerEngine.h; sourceTree = "<group>"; };
+		42EF3A7414C93FFB0034E0B4 /* RGVideoPlayerEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGVideoPlayerEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EF3A6714C918E30034E0B4 /* MediaPlayer.framework in Frameworks */,
 				42EF3A4514C916180034E0B4 /* UIKit.framework in Frameworks */,
 				42EF3A4714C916180034E0B4 /* Foundation.framework in Frameworks */,
 				42EF3A4914C916180034E0B4 /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +58,7 @@
 		42EF3A3514C916180034E0B4 = {
 			isa = PBXGroup;
 			children = (
+				42EF3A6614C918E30034E0B4 /* MediaPlayer.framework */,
 				42EF3A4A14C916180034E0B4 /* RGMoviePlayer */,
 				42EF3A4314C916180034E0B4 /* Frameworks */,
 				42EF3A4114C916180034E0B4 /* Products */,
@@ -72,6 +86,7 @@
 		42EF3A4A14C916180034E0B4 /* RGMoviePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				42EF3A5B14C916280034E0B4 /* RGVideoPlayer */,
 				42EF3A5314C916180034E0B4 /* RGMoviePlayerAppDelegate.h */,
 				42EF3A5414C916180034E0B4 /* RGMoviePlayerAppDelegate.m */,
 				42EF3A4B14C916180034E0B4 /* Supporting Files */,
@@ -88,6 +103,20 @@
 				42EF3A5214C916180034E0B4 /* RGMoviePlayer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EF3A5B14C916280034E0B4 /* RGVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				42EF3A6814C920E00034E0B4 /* RGFacebookMoviePlayerController.h */,
+				42EF3A6914C920E00034E0B4 /* RGFacebookMoviePlayerController.m */,
+				42EF3A6F14C928980034E0B4 /* RGYoutubePlayerController.h */,
+				42EF3A7014C928980034E0B4 /* RGYoutubePlayerController.m */,
+				42EF3A7214C928CB0034E0B4 /* RGVideoPlayerDelegate.h */,
+				42EF3A7314C93FFB0034E0B4 /* RGVideoPlayerEngine.h */,
+				42EF3A7414C93FFB0034E0B4 /* RGVideoPlayerEngine.m */,
+			);
+			name = RGVideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +183,9 @@
 			files = (
 				42EF3A5114C916180034E0B4 /* main.m in Sources */,
 				42EF3A5514C916180034E0B4 /* RGMoviePlayerAppDelegate.m in Sources */,
+				42EF3A6A14C920E00034E0B4 /* RGFacebookMoviePlayerController.m in Sources */,
+				42EF3A7114C928980034E0B4 /* RGYoutubePlayerController.m in Sources */,
+				42EF3A7514C93FFC0034E0B4 /* RGVideoPlayerEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +289,7 @@
 				42EF3A5A14C916180034E0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

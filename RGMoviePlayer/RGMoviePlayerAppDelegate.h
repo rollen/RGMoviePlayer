@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RGVideoPlayerDelegate.h"
 
 @interface RGMoviePlayerAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) id <RGVideoPlayerDelegate> videoPlayer;
 
 @end

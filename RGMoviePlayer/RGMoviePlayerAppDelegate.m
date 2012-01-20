@@ -7,10 +7,14 @@
 //
 
 #import "RGMoviePlayerAppDelegate.h"
+#import "RGYouTubePlayerController.h"
+#import "RGFacebookMoviePlayerController.h"
+#import "RGVideoPlayerEngine.h"
 
 @implementation RGMoviePlayerAppDelegate
 
 @synthesize window = _window;
+@synthesize videoPlayer = _videoPlayer;
 
 - (void)dealloc
 {
@@ -23,7 +27,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    NSURL *facebook = [NSURL URLWithString:@"https://fbcdn-video-a.akamaihd.net/cfs-ak-ash4/232134/485/2031763147233_48854.mp4?oh=07d786a8acef4fed3e7029306009c49b&oe=4F1B7E00&__gda__=1327201792_ecaba310eef6069850de177cd7822295"];
+    //NSURL *youtube = [NSURL URLWithString:@"http://www.youtube.com/v/053S4B5J0is?version=3&autohide=1&autoplay=1"];
+    self.videoPlayer = [RGVideoPlayerEngine  initVideoPlayerControllerWithContentURL:facebook frame:[[UIScreen mainScreen] bounds]];
+    [self.window addSubview:self.videoPlayer.view];
+    [self.videoPlayer play];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
